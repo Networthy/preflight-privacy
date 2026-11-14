@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Privacy policy for the Preflight Chrome extension.">
+  <meta name="description" content="Privacy policy for the Preflight Chrome extension, web portal, and service.">
   <title>Preflight Privacy Policy</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -13,58 +13,114 @@
     <header>
       <p class="product">Preflight</p>
       <h1>Privacy Policy</h1>
-      <p class="effective">Effective June 15, 2026</p>
+      <p class="effective">Effective November 14, 2026</p>
     </header>
 
     <section aria-labelledby="overview">
       <h2 id="overview">Overview</h2>
       <p>
-        Preflight is a Chrome extension that reviews a region you select in an
-        email, newsletter, landing page, or similar web surface. It checks the
-        selected content for copy, link, visual, and accessibility issues and
-        displays findings on the page.
+        Preflight reviews emails, newsletters, landing pages, and similar web
+        content before you send or publish them. It has three parts:
       </p>
+      <ul>
+        <li>
+          <strong>The Chrome extension</strong> reviews a region you select on a
+          page. It checks the content for copy, link, visual, accessibility, and
+          brand-guideline issues and shows the findings on the page.
+        </li>
+        <li>
+          <strong>The web portal</strong> is where you sign in, connect browsers,
+          manage your workspace's brand guidelines, and manage billing.
+        </li>
+        <li>
+          <strong>The Preflight service</strong> runs reviews and stores your
+          account, workspace, and review history.
+        </li>
+      </ul>
       <p>
-        Preflight accesses and transmits review content only when you
-        explicitly start a review. It does not monitor your browsing in the
-        background, sell personal data, or use personal data for advertising.
+        The extension reads page content only when you start a review. It does
+        not monitor your browsing in the background. We do not sell personal
+        data or use it for advertising.
       </p>
     </section>
 
     <section aria-labelledby="collection">
       <h2 id="collection">Information We Process</h2>
 
-      <h3>Content submitted for review</h3>
-      <p>When you start a review, Preflight may process:</p>
+      <h3>Content you submit for review</h3>
+      <p>When you start a review, the extension sends the Preflight service:</p>
       <ul>
-        <li>Text and subject content from the region you selected.</li>
+        <li>
+          The text of the region you selected, with each element's role, layout
+          position, and computed style, and the email subject when you review a
+          webmail message.
+        </li>
         <li>Cleaned HTML and structural information for the selected region.</li>
         <li>Links, link text, image URLs, image alternative text, and related metadata.</li>
-        <li>A screenshot of the selected region, including text visible in images.</li>
-        <li>The page URL, page title, viewport details, and supported platform information.</li>
+        <li>A screenshot of the selected region, including any text that appears in images.</li>
+        <li>The page URL and title, viewport details, and supported platform information.</li>
+        <li>
+          Fingerprints (one-way hashes) of the content and page address, so that
+          related reviews can be grouped.
+        </li>
+        <li>Results of checks the extension ran locally, and your review settings.</li>
       </ul>
       <p>
-        Depending on the content you select, this information may include
-        personal communications, personal information, or other sensitive
-        material. Select only content that you are authorized to review.
+        Depending on what you select, this may include personal communications,
+        personal information, or other sensitive material. Select only content
+        you are authorized to review.
       </p>
 
-      <h3>Account and service information</h3>
-      <p>Preflight may process:</p>
+      <h3>Brand guidelines</h3>
+      <p>
+        Workspace members can upload brand guidelines (PDF, DOCX, PNG, JPEG, or
+        SVG files) in the portal and edit the rules and voice settings derived
+        from them. We store the uploaded files, text extracted from them, page
+        preview images, and the resulting rules, examples, and citations.
+      </p>
+
+      <h3>Account and workspace information</h3>
       <ul>
-        <li>Your account email address and workspace or account identifiers.</li>
-        <li>Device credentials used to authenticate the extension.</li>
-        <li>Credit balances, usage totals, request identifiers, and service status.</li>
+        <li>Your name, email address, workspace name, and workspace role.</li>
+        <li>
+          The names of browsers you connect, when they were connected and last
+          seen, and the credentials that authenticate them.
+        </li>
+        <li>Your plan, subscription status, credit balance, and usage totals.</li>
       </ul>
+
+      <h3>Billing information</h3>
+      <p>
+        Paid plans are billed by Stripe. When a workspace owner or admin
+        upgrades, they enter payment details on pages hosted by Stripe.
+        Preflight never receives or stores full card numbers. We send Stripe
+        your email address, your workspace name, and a workspace identifier.
+        Stripe may also collect a billing name, billing address, and tax ID
+        to calculate taxes. We keep Stripe's customer and subscription
+        identifiers, your plan, the subscription status and billing period,
+        and records of refunds, disputes, and fraud warnings that Stripe
+        reports to us.
+      </p>
+
+      <h3>Feedback and support</h3>
+      <p>
+        If you send feedback from the extension, we receive your description,
+        your name and email address, and the related review identifier. Unless
+        you uncheck the option, feedback also includes a debug bundle: the
+        reviewed content, the screenshot, the findings, and request
+        diagnostics.
+      </p>
 
       <h3>Technical information</h3>
       <p>
-        The service records limited operational metadata needed for security,
-        reliability, abuse prevention, support, and cost control. This may
-        include request time, request size, check type, duration, result counts,
-        device and workspace identifiers, error category, and network logs such
-        as IP address. Operational logs are designed not to contain raw review
-        text, HTML, screenshots, prompts, or full model responses.
+        The service records limited operational data for security,
+        reliability, abuse prevention, support, and cost control. This includes
+        request times and sizes, check types, durations, result counts, model
+        usage and cost, device and workspace identifiers, and error categories.
+        Our hosting provider's network logs may include IP addresses. For sign-in
+        links we store a keyed hash of the requesting IP address and browser,
+        not the raw values. Operational logs are designed not to contain review
+        text, HTML, screenshots, prompts, or model responses.
       </p>
     </section>
 
@@ -72,10 +128,12 @@
       <h2 id="use">How We Use Information</h2>
       <p>We use information only to:</p>
       <ul>
-        <li>Authenticate your account and extension installation.</li>
-        <li>Perform the review you requested and return findings.</li>
-        <li>Apply saved preferences and selected-region settings.</li>
-        <li>Enforce usage limits and protect the service from abuse.</li>
+        <li>Authenticate you, your workspace, and the browsers you connect.</li>
+        <li>Perform the reviews you request, check your links, and return findings.</li>
+        <li>Turn uploaded brand guidelines into rules and apply them to your reviews.</li>
+        <li>Show your review history and the share links you create.</li>
+        <li>Manage plans, credits, subscriptions, and payments.</li>
+        <li>Enforce usage limits and protect the service from abuse and fraud.</li>
         <li>Diagnose failures, provide support, and improve review quality and reliability.</li>
         <li>Comply with legal obligations and protect users and the service.</li>
       </ul>
@@ -84,12 +142,46 @@
     <section aria-labelledby="sharing">
       <h2 id="sharing">Service Providers and Disclosure</h2>
       <p>
-        Review content is sent over HTTPS to the managed Preflight service.
-        Preflight may send the portions needed for analysis to contracted
-        infrastructure and artificial-intelligence providers, including Google
-        Gemini services. These providers process data to deliver the requested
-        review and are subject to their applicable contractual terms and data
-        handling policies.
+        Review content is sent over HTTPS to the Preflight service. We share
+        information with the following service providers only as needed to run
+        Preflight:
+      </p>
+      <ul>
+        <li>
+          <strong>Google (Gemini API)</strong> analyzes review content, including
+          text, HTML, screenshots, and your workspace's brand rules and logo
+          images.
+        </li>
+        <li>
+          <strong>OpenAI</strong> turns uploaded brand guidelines into rules. When
+          brand checks are on, it also compares review content and screenshots
+          with those rules. You confirm an AI-processing notice before a
+          guideline import starts.
+        </li>
+        <li><strong>Stripe</strong> processes subscriptions, payments, and taxes.</li>
+        <li>
+          <strong>Railway</strong> hosts the Preflight service, its database, file
+          storage, and the isolated machines used to check links.
+        </li>
+        <li><strong>An email delivery provider</strong> sends sign-in links.</li>
+        <li>
+          <strong>YouTube and Vimeo</strong> receive the addresses of their own
+          video links in your content, so we can check that those videos exist.
+        </li>
+      </ul>
+      <p>
+        These providers process data under their contractual terms and data
+        handling policies. Uploaded guideline files are scanned for malware and
+        converted to text by Preflight's own isolated service. They are not
+        sent to an outside scanning or OCR provider.
+      </p>
+      <p>
+        <strong>Link checking.</strong> To verify links, Preflight requests each
+        link in the reviewed content from its own servers, sometimes in a
+        headless browser. Each review uses a fresh browser and machine without
+        your cookies or sign-ins. The websites and link-tracking services behind
+        those links receive the request, including any tracking parameters in
+        the link.
       </p>
       <p>
         We may also disclose information when required by law, to investigate
@@ -99,54 +191,112 @@
       </p>
     </section>
 
-    <section aria-labelledby="storage">
-      <h2 id="storage">Browser Storage</h2>
+    <section aria-labelledby="shared-links">
+      <h2 id="shared-links">Shared Review Links</h2>
       <p>
-        The extension stores saved region selectors, preferences, disclosure
-        acceptance, account metadata, and device credentials in Chrome's local
-        extension storage. Review content, screenshots, and findings are not
-        persistently stored by the extension. Disconnecting removes local
-        account metadata and credentials but leaves saved region settings until
-        you delete them or remove the extension.
+        You can create a link to a past review. Anyone with the link can view it
+        without signing in until it expires (after at most 7 days) or you revoke
+        it. A shared review shows the email subject, the findings, and the
+        quoted text and links they refer to. If you include the email preview,
+        it also shows an image of the reviewed content, which may contain
+        personal details. The extension warns you about this the first time.
+        Shared pages are marked so that search engines do not index them.
+      </p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">Cookies and Browser Storage</h2>
+      <p>
+        The portal sets one cookie, a secure session cookie that keeps you signed
+        in for up to 30 days. The portal and extension do not use analytics,
+        advertising, or third-party tracking scripts.
+      </p>
+      <p>The extension stores the following in Chrome's local extension storage:</p>
+      <ul>
+        <li>Saved regions and preferences, including the accessibility-check setting.</li>
+        <li>Your acceptance of the review disclosure and the share-preview warning.</li>
+        <li>Account details: your email, workspace, plan, and credits.</li>
+        <li>The credentials for your connected browser.</li>
+        <li>Short-lived identifiers that let an interrupted review resume.</li>
+      </ul>
+      <p>
+        On the page you review, the extension remembers the width and collapsed
+        state of its sidebar in that site's local storage. The optional
+        copy-evaluation tool stores your ratings, comments, and a copy of the
+        reviewed content and screenshot in the extension's own browser
+        database. It does not upload them, and you can export them as a file.
+      </p>
+      <p>
+        Disconnecting the extension revokes and removes its credentials and
+        account details. Saved regions, preferences, and copy-evaluation drafts
+        remain until you delete them or remove the extension.
       </p>
     </section>
 
     <section aria-labelledby="retention">
       <h2 id="retention">Retention</h2>
+      <ul>
+        <li>
+          <strong>Review history.</strong> Each review's findings, quoted text,
+          link and image details, content excerpts, and screenshot are kept for
+          30 days, then deleted. We may enable retention of the full submitted
+          text to support re-checking past reviews. It is off by default and
+          never kept longer than the review itself.
+        </li>
+        <li>
+          <strong>Model inputs.</strong> Prompts, cleaned HTML, and raw model
+          responses are processed for the review and not stored.
+        </li>
+        <li>
+          <strong>Shared links</strong> and their preview images last up to 7
+          days and are deleted when they expire or you revoke them.
+        </li>
+        <li>
+          <strong>Feedback debug bundles</strong> are kept for up to 30 days.
+          Written feedback is kept as long as needed to address it.
+        </li>
+        <li>
+          <strong>Brand guidelines</strong> are kept until a workspace member
+          deletes them. After a purge, only minimal metadata remains, such as a
+          file name and a digest.
+        </li>
+        <li><strong>Sign-in links</strong> expire after 15 minutes and work once.</li>
+        <li>
+          <strong>Account, usage, billing, security, and audit records</strong>
+          are kept while your account is active and afterward as needed to
+          operate the service, resolve disputes, and meet legal, tax, and
+          accounting obligations.
+        </li>
+      </ul>
       <p>
-        Raw review content, cleaned HTML, screenshots, prompts, and model
-        responses are processed for the requested review and are not retained
-        by the Preflight service by default. Preflight retains account,
-        authentication, usage-ledger, billing, security, and operational
-        metadata for as long as reasonably necessary to operate and protect the
-        service and meet legal obligations.
-      </p>
-      <p>
-        An exported debug bundle is created only when you explicitly request
-        one. It is downloaded to your device and may contain the submitted
-        content, screenshot, request metadata, and findings. You control and are
-        responsible for that downloaded file.
+        Debug bundles and evaluation files you download are saved to your
+        device. They may contain the submitted content, screenshot, and
+        findings. You control and are responsible for those files.
       </p>
     </section>
 
     <section aria-labelledby="human-access">
       <h2 id="human-access">Human Access</h2>
       <p>
-        Preflight personnel do not read raw review content as part of normal
-        service operation. Human access is limited to circumstances permitted
-        by the Chrome Web Store User Data Policy, such as when you give consent
-        for support involving specific content, when access is required for
-        security or abuse investigation, or when required by law.
+        Preflight personnel do not read review content as part of normal
+        operation. We may view it when you send it to us with feedback or
+        otherwise give consent for support, when needed to investigate security
+        or abuse, or when required by law. These limits are consistent with
+        the Chrome Web Store User Data Policy.
       </p>
     </section>
 
     <section aria-labelledby="security">
       <h2 id="security">Security</h2>
       <p>
-        Preflight uses HTTPS for service communications, limits production host
-        access to the managed API, stores hashed device-token representations on
-        the server, and applies authentication, payload limits, usage controls,
-        and other safeguards. No system can guarantee absolute security.
+        Preflight uses HTTPS for all service communications. We store only
+        hashes of extension credentials, portal sessions, sign-in links, and
+        share-link secrets. Shared links keep their secret in a part of the
+        address that browsers do not send to servers. Uploaded files are
+        malware-scanned and parsed in an isolated service without access to
+        your account data. Links are checked on disposable machines. We also
+        apply authentication, payload limits, usage controls, and other
+        safeguards. No system can guarantee absolute security.
       </p>
     </section>
 
@@ -155,9 +305,22 @@
       <ul>
         <li>You choose whether to start each review and which region to submit.</li>
         <li>You can cancel before accepting the first-review disclosure.</li>
-        <li>You can disconnect the extension to revoke and remove local credentials.</li>
-        <li>You can delete saved views or uninstall the extension to remove locally stored settings.</li>
-        <li>You may contact us to request access, correction, or deletion of account information.</li>
+        <li>You can leave the debug bundle out of feedback you send.</li>
+        <li>You can revoke shared links before they expire.</li>
+        <li>
+          You can disconnect the extension, or revoke a connected browser from
+          the portal.
+        </li>
+        <li>You can delete uploaded brand guidelines.</li>
+        <li>
+          You can manage or cancel a subscription and update payment details
+          through Stripe's billing portal.
+        </li>
+        <li>You can delete saved regions or uninstall the extension to remove local data.</li>
+        <li>
+          You can contact us to request access to, correction of, or deletion of
+          your account, workspace, or review data.
+        </li>
       </ul>
     </section>
 
@@ -185,7 +348,7 @@
       <p>
         We may update this policy as Preflight changes. The effective date at
         the top of this page identifies the latest revision. Material changes
-        will be communicated through the extension, the service, or another
+        will be communicated through the extension, the portal, or another
         appropriate channel.
       </p>
     </section>
