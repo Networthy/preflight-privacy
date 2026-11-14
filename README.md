@@ -1,6 +1,6 @@
 # Preflight Privacy
 
-Public privacy policy for the Preflight Chrome extension.
+Public privacy policy for the Preflight Chrome extension, web portal, and service.
 
 The repository intentionally contains only the static privacy-policy site and
 its GitHub Pages deployment workflow. It does not contain the Preflight
