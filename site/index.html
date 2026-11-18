@@ -13,7 +13,7 @@
     <header>
       <p class="product">Preflight</p>
       <h1>Privacy Policy</h1>
-      <p class="effective">Effective November 14, 2026</p>
+      <p class="effective">Effective November 18, 2026</p>
     </header>
 
     <section aria-labelledby="overview">
@@ -58,6 +58,11 @@
         <li>Cleaned HTML and structural information for the selected region.</li>
         <li>Links, link text, image URLs, image alternative text, and related metadata.</li>
         <li>A screenshot of the selected region, including any text that appears in images.</li>
+        <li>
+          Copies of the images in the selected region, which the extension
+          downloads from the addresses the page already loads them from, so
+          the text in them can be read at full quality.
+        </li>
         <li>The page URL and title, viewport details, and supported platform information.</li>
         <li>
           Fingerprints (one-way hashes) of the content and page address, so that
@@ -108,7 +113,9 @@
         your name and email address, and the related review identifier. Unless
         you uncheck the option, feedback also includes a debug bundle: the
         reviewed content, the screenshot, the findings, and request
-        diagnostics.
+        diagnostics. It leaves out the image copies described above unless you
+        check a separate box to include them; if you do, they are kept with
+        your feedback like the rest of the bundle.
       </p>
 
       <h3>Technical information</h3>
@@ -148,15 +155,17 @@
       </p>
       <ul>
         <li>
-          <strong>Google (Gemini API)</strong> analyzes review content, including
-          text, HTML, screenshots, and your workspace's brand rules and logo
-          images.
+          <strong>OpenAI</strong> analyzes review content, including text, HTML,
+          screenshots, and your workspace's brand rules and logo images. It also
+          turns uploaded brand guidelines into rules. You confirm an
+          AI-processing notice before a guideline import starts.
         </li>
         <li>
-          <strong>OpenAI</strong> turns uploaded brand guidelines into rules. When
-          brand checks are on, it also compares review content and screenshots
-          with those rules. You confirm an AI-processing notice before a
-          guideline import starts.
+          <strong>Google Cloud Vision</strong> reads the text in images in your
+          review content. We send it only the images themselves: the copies the
+          extension downloaded or, when a copy isn't available, the part of the
+          screenshot that shows the image. We never send it the image addresses
+          or the rest of the review.
         </li>
         <li><strong>Stripe</strong> processes subscriptions, payments, and taxes.</li>
         <li>
@@ -171,8 +180,11 @@
       </ul>
       <p>
         These providers process data under their contractual terms and data
-        handling policies. Uploaded guideline files are scanned for malware and
-        converted to text by Preflight's own isolated service. They are not
+        handling policies. We use paid AI and image-reading services under
+        business terms that do not allow the provider to train its models on
+        the content we send. If we change these providers, we will update this
+        policy. Uploaded guideline files are scanned for malware and converted
+        to text by Preflight's own isolated service. They are not
         sent to an outside scanning or OCR provider.
       </p>
       <p>
@@ -239,7 +251,9 @@
         <li>
           <strong>Review history.</strong> Each review's findings, quoted text,
           link and image details, content excerpts, and screenshot are kept for
-          30 days, then deleted. We may enable retention of the full submitted
+          30 days, then deleted. The image copies the extension downloads are
+          used only while the review runs and are not kept, unless you choose to
+          include them in feedback. We may enable retention of the full submitted
           text to support re-checking past reviews. It is off by default and
           never kept longer than the review itself.
         </li>
